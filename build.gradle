@@ -19,7 +19,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
-	runtimeOnly 'org.postgresql:postgresql:42.5.1'
+	runtimeOnly 'com.h2database:h2'
 }
 
 tasks.named('test') {
