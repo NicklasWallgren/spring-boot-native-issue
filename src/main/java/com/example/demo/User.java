@@ -22,11 +22,6 @@ public class User {
     @SequenceGenerator(name = "user_generator", allocationSize = 100, sequenceName = "s_user")
     private Long id;
 
-    @Column(name = "email", columnDefinition = "varchar(255) not null", nullable = false)
-    @Convert(converter = EmailConverter.class)
-    @NaturalId
-    private Email email;
-
     public Long getId() {
         return id;
     }
@@ -35,7 +30,4 @@ public class User {
         this.id = id;
     }
 
-    public Email getEmail() {
-        return email;
-    }
 }
